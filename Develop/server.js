@@ -21,14 +21,14 @@ const db = mysql.createConnection (
 )
 
 function start() {
-    const logoText = logo({name:"Employee \n !"}).render()
+    const logoText = logo({name:"Employee's Rock \n !!"}).render()
     console.log(logoText)
     inquirer.prompt([
         {
             type: "list",
             name: "startingQuestions",
             message: "Select an Option",
-            choices: ["View All Employees", "View All Departments", "View All Roles", "Add a Department", "Add a Role", "Add an Employee", "Update a Department", "Update a Role", "Update an Employee", "Update Employee Managers", "View Employees by Manager", "View Employees by Department", "Delete Department", "Delete Role", "Delete Employee", "View the Total Budget of the Department", "Quit"
+            choices: ["View All Employees", "View All Departments", "View All Roles", "Add a Department", "Add a Role", "Add an Employee", "Update a Department", "Update a Role", "Update an Employee", "Update Employee Managers", "View Employees by Manager", "View Employees by Department", "Delete Department", "Delete Role", "Delete Employee", "View the Total Budget of the Department", "Quit"]
         }
     ]).then((userResponse)=>{
         console.log("user selected:  " + userResponse.startingQuestions)
@@ -53,6 +53,20 @@ function start() {
                 updateARole();
             case "Update an Employee":
                 updateAnEmployee();
+            case "Update Employee Managers":
+                updateEmployeeManagers();
+            case "View Employees by Manager":
+                viewEmployeesByManager();
+            case "View Employees by Department":
+                viewEmployeesByDepartment();
+            case "Delete Department":
+                deleteDepartment();
+            case "Delete Role":
+                deleteRole();
+            case "Delete Employee":
+                deleteEmployee();
+            case "View the Total Budget of the Department":
+                viewTotalBudget();
             case "Quit":
                 quit();
             default:
