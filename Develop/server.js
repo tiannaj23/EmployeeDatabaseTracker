@@ -28,7 +28,7 @@ function start() {
             type: "list",
             name: "startingQuestions",
             message: "Select an Option",
-            choices: ["View All Employees", "View All Departments", "View All Roles", "Add a Department", "Add a Role", "Add an Employee", "Update a Department", "Update a Role", "Update an Employee", "Quit"]
+            choices: ["View All Employees", "View All Departments", "View All Roles", "Add a Department", "Add a Role", "Add an Employee", "Update a Department", "Update a Role", "Update an Employee", "Update Employee Managers", "View Employees by Manager", "View Employees by Department", "Delete Department", "Delete Role", "Delete Employee", "View the Total Budget of the Department", "Quit"
         }
     ]).then((userResponse)=>{
         console.log("user selected:  " + userResponse.startingQuestions)
@@ -62,12 +62,24 @@ function start() {
     })
 }
 
-
 function viewAllEmployees() {
     db.query("SELECT * FROM employee",  function(err, results) {
     (err)? console.log(err): console.table(results), start()
     })
 }
+
+function viewAllDepartments() {
+    db.query("SELECT * FROM department",  function(err, results) {
+    (err)? console.log(err): console.table(results), start()
+    })
+}
+
+function viewAllRoles() {
+    db.query("SELECT * FROM role",  function(err, results) {
+    (err)? console.log(err): console.table(results), start()
+    })
+}
+
 
 app.use((req, res) => {
     res.status(404).end()
