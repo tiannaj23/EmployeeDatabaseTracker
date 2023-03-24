@@ -3,7 +3,8 @@
 ## Description
 It is intended to view and manage the departments, roles, and employees in a business owner's company. This will help them to organize and plan their business.
 
-https://github.com/tiannaj23/EmployeeDatabaseTracker
+- https://github.com/tiannaj23/EmployeeDatabaseTracker
+
 
 ## Table of Contents
 - [Title](#title)
@@ -38,3 +39,5 @@ None.
 If you have any questions about the repo, open an issue or contact me directly at tiannaj23@gmail.com. You can find more of my work at [https://github.com/tiannaj23](https://github.com/https://github.com/tiannaj23/).
 
 ## Walkthrough Video
+
+- https://drive.google.com/file/d/1-9SFJlkEYeLpwkee8zWs2iSdUVXJFb1t/view
