@@ -98,13 +98,13 @@ function addADepartment() {
 
     inquirer.prompt([ 
         {
-         /* Pass your questions in here */
-         type:"",
-         name:"",
-         message:""
+         type:"input",
+         name:"deptName",
+         message:"What is the department's name?"
         }
-      ]).then((answers) => {
-        // Use user feedback for... whatever!!
+      ]).then((response) => {
+        response.deptName
+        console.log(response)
       })
       .catch((error) => {
         if (error.isTtyError) {

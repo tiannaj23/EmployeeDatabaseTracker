@@ -15,10 +15,14 @@ It is intended to view and manage the departments, roles, and employees in a bus
 
 
 ## Installation
-First, make sure to add all dependencies that are necessary. Second, install those necessary packages through the command line. Third, make sure to create the Develop folder, that will hold all sub-folders and files.
+- User should clone this repository from GitHub.
+- This application required node.js, asciiart-logo, console.table, inquirer, and mysql2.
+Change password for index.js to your root password for mysql.
+- Start the application by running node index or nmp start.
 
 ## Usage
-Start the application using node server.js. You will be prompted with a list of opions to view, add, update, and delete different categories. Once you click on one of the options fromt he first prompt, a series of other prompts will come up depending on the option that you selected.
+- You will be prompted with a list of opions to view, add, update, and delete different categories. 
+- Once you click on one of the options fromt he first prompt, a series of other prompts will come up depending on the option that you selected.
 
 ## License
 None
