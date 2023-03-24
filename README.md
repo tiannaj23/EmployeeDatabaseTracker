@@ -11,7 +11,7 @@ It is intended to view and manage the departments, roles, and employees in a bus
 - [Tests](#tests)
 - [Contributing](#contributing)
 - [Questions](#questions)
-- [Mock-Up](#mock-up)
+- [Walkthrough-Video](#walkthrough-video)
 
 
 ## Installation
